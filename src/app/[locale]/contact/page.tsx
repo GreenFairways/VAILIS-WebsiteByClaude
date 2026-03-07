@@ -19,12 +19,14 @@ export default function ContactPage() {
 
   return (
     <div className="py-16 sm:py-24">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-[#1A1A2E]">Contact Us</h1>
         <p className="mt-4 text-xl text-gray-600">
           Book a free AI audit or get in touch with our team
         </p>
 
+        <div className="mt-12 grid lg:grid-cols-2 gap-12">
+          <div>
         {submitted ? (
           <div className="mt-12 rounded-2xl bg-[#059669]/10 border border-[#059669]/30 p-8 text-center">
             <p className="text-lg font-semibold text-[#059669]">Thank you!</p>
@@ -91,9 +93,20 @@ export default function ContactPage() {
             </button>
           </form>
         )}
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-[#1A1A2E]">Or book a meeting</h3>
+            <p className="mt-2 text-gray-600 text-sm">Schedule a call at your convenience</p>
+            <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 aspect-[4/3] flex items-center justify-center">
+              <p className="text-gray-500 text-sm">Calendly or Cal.com embed — add your booking URL</p>
+            </div>
+          </div>
+        </div>
 
         <div className="mt-16 border-t border-gray-200 pt-8">
-          <p className="text-sm text-gray-500">Or email us directly: hello@vailis.ai</p>
+          <p className="text-sm text-gray-500">We respond within 4 business hours • Tbilisi, Georgia</p>
+          <p className="mt-1 text-sm text-gray-500">Or email: hello@vailis.ai</p>
         </div>
       </div>
     </div>

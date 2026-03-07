@@ -6,6 +6,7 @@ import { ROITeaser } from '@/components/home/ROITeaser';
 import { TwitterFeed } from '@/components/home/TwitterFeed';
 import { MethodologyPreview } from '@/components/home/MethodologyPreview';
 import { TrustSection } from '@/components/home/TrustSection';
+import { FAQSection } from '@/components/FAQSection';
 import { CTASection } from '@/components/home/CTASection';
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <TwitterFeed />
       <MethodologyPreview />
       <TrustSection />
+      <FAQSection />
       <CTASection />
     </>
   );

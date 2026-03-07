@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import { JsonLd } from '@/components/JsonLd';
+import { serviceSchemas, faqSchema } from '@/lib/schema';
+import { FAQSection } from '@/components/FAQSection';
 
 const services = [
   {
@@ -69,6 +71,10 @@ export default async function ServicesPage({
 
   return (
     <div className="py-16 sm:py-24">
+      {serviceSchemas.map((s, i) => (
+        <JsonLd key={i} data={s} />
+      ))}
+      <JsonLd data={faqSchema} />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-[#1A1A2E]">{t('title')}</h1>
@@ -107,6 +113,9 @@ export default async function ServicesPage({
               </div>
             </section>
           ))}
+        </div>
+        <div className="mt-24">
+          <FAQSection />
         </div>
       </div>
     </div>

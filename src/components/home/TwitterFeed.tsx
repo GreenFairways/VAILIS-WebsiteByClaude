@@ -32,7 +32,7 @@ export function TwitterFeed() {
         >
           Curated perspectives on AI implementation
         </motion.p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {tweets.map((tweet, i) => (
             <motion.article
               key={tweet.id}

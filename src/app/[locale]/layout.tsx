@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: 'VAILIS.ai | AI Execution Partner',
     description: 'We turn AI into business results. Execution partner for AI integration.',
   },
+  metadataBase: new URL('https://vailis.ai'),
 };
 
 export function generateStaticParams() {

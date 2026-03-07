@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { organizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "VAILIS.ai | AI Execution Partner",
@@ -13,6 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
       <body className="bg-white text-gray-900 antialiased font-sans">
         {children}
       </body>

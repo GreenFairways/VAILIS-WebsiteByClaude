@@ -1,12 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { CountUp } from '@/components/CountUp';
 
 const partners = ['OpenAI', 'Anthropic', 'AWS', 'Google Cloud', 'Microsoft Azure'];
 const badges = ['GDPR Compliant', 'SOC 2 Ready', 'ISO Aligned'];
 const stats = [
-  { value: '500+', label: 'AI projects researched' },
-  { value: '$4.4T', label: 'Projected AI economic impact' },
+  { value: 500, suffix: '+', label: 'AI projects researched' },
+  { value: 4.4, suffix: 'T', prefix: '$', label: 'Projected AI economic impact' },
 ];
 
 export function TrustSection() {
@@ -44,10 +45,12 @@ export function TrustSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="text-center"
               >
-                <p className="text-4xl font-bold text-[#4F46E5]">{s.value}</p>
+                <p className="text-4xl font-bold text-[#4F46E5]">
+                  <CountUp end={s.value} prefix={s.prefix} suffix={s.suffix} />
+                </p>
                 <p className="mt-1 text-gray-600">{s.label}</p>
               </motion.div>
             ))}

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { caseStudies } from '@/data/case-studies';
+import { JsonLd } from '@/components/JsonLd';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -15,8 +16,22 @@ export default async function CaseStudyPage({ params }: Props) {
 
   const basePath = `/${locale}`;
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${cs.company}: AI Transformation — ${cs.metrics[0]?.value} ${cs.metrics[0]?.label}`,
+    author: { '@type': 'Organization', name: 'VAILIS.ai' },
+    datePublished: '2026-03-01',
+    about: { '@type': 'Thing', name: cs.industry },
+    mentions: [
+      { '@type': 'Organization', name: cs.company },
+      ...cs.techStack.slice(0, 2).map((t) => ({ '@type': 'Thing', name: t })),
+    ],
+  };
+
   return (
     <article className="py-16 sm:py-24">
+      <JsonLd data={articleSchema} />
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <Link
           href={`${basePath}/case-studies`}
