@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1A1A2E;
+  --navy-light: #16213E;
+  --indigo: #4F46E5;
+  --indigo-light: #6366F1;
+  --success: #059669;
+  --background: #ffffff;
+  --foreground: #1A1A2E;
+  --muted: #64748B;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-indigo: var(--indigo);
+  --color-success: var(--success);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}

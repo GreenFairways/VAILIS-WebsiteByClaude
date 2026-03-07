@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "caseStudies": "Case Studies",
+    "services": "Services",
+    "approach": "Approach",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact",
+    "roiCalculator": "ROI Calculator",
+    "bookAudit": "Book a Free AI Audit",
+    "seeCaseStudies": "See Our Case Studies"
+  },
+  "hero": {
+    "headline": "We Turn AI Into Business Results",
+    "subhead": "Execution partner for AI integration. Measurable ROI. Proven methodologies. From strategy to deployment.",
+    "ctaPrimary": "Book a Free AI Audit",
+    "ctaSecondary": "See Our Case Studies",
+    "trustBar": "Trusted by enterprises worldwide"
+  },
+  "problem": {
+    "title": "The AI Adoption Paradox",
+    "stats": {
+      "stat1": "95%",
+      "stat1Label": "of AI pilots fail to deliver ROI",
+      "stat1Source": "MIT, 2025",
+      "stat2": "1%",
+      "stat2Label": "of organizations have achieved AI maturity",
+      "stat2Source": "McKinsey, 2025",
+      "stat3": "62%",
+      "stat3Label": "of executives say AI implementation was harder than expected",
+      "stat3Source": "RSM, 2025"
+    },
+    "positioning": "That's why you need an Execution Partner, not just a vendor."
+  },
+  "services": {
+    "title": "Our Services",
+    "audit": {
+      "title": "AI Strategy & Audit",
+      "desc": "Assessment of AI readiness, opportunity mapping, ROI projections"
+    },
+    "integration": {
+      "title": "AI Integration & Development",
+      "desc": "Custom AI solutions, API integration, workflow automation"
+    },
+    "agents": {
+      "title": "AI Agent Deployment",
+      "desc": "Autonomous agents for customer service, operations, marketing"
+    },
+    "training": {
+      "title": "Training & Change Management",
+      "desc": "Team upskilling, process redesign, adoption support"
+    },
+    "learnMore": "Learn More"
+  },
+  "caseStudies": {
+    "title": "AI in Action: Real Business Results",
+    "subtitle": "We study the world's most impactful AI implementations to bring proven strategies to your business.",
+    "readFull": "Read Full Case Study",
+    "featured": "Featured Case Studies"
+  },
+  "roi": {
+    "title": "How much could AI save your business?",
+    "employees": "Number of employees",
+    "estimate": "Preliminary savings estimate",
+    "cta": "Get Your Full ROI Analysis"
+  },
+  "methodology": {
+    "title": "Our Approach",
+    "steps": {
+      "discovery": "Discovery",
+      "discoveryDesc": "Assess readiness, map opportunities",
+      "design": "Design",
+      "designDesc": "Architecture, roadmap, metrics",
+      "deploy": "Deploy",
+      "deployDesc": "Implementation, integration",
+      "scale": "Scale",
+      "scaleDesc": "Optimization, expansion"
+    },
+    "cta": "Learn Our Approach"
+  },
+  "cta": {
+    "title": "Ready to Turn AI Into Business Results?",
+    "primary": "Book a Free AI Audit",
+    "secondary": "Download Our AI Readiness Checklist"
+  },
+  "footer": {
+    "company": "Company",
+    "services": "Services",
+    "resources": "Resources",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "copyright": "© {year} VAILIS.ai. All rights reserved."
+  }
+}
