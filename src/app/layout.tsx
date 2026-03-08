@@ -3,7 +3,7 @@ import "./globals.css";
 import { organizationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "VAILIS.ai | AI Execution Partner",
+  title: "VAILIS | AI Execution Partner",
   description: "We turn AI into business results. Execution partner for AI integration.",
 };
 

@@ -9,14 +9,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-semibold text-[#1A1A2E]">1. Acceptance</h2>
             <p>
-              By using VAILIS.ai&apos;s website and services, you agree to these terms.
+              By using VAILIS&apos;s website and services, you agree to these terms.
               If you do not agree, do not use our site.
             </p>
           </section>
           <section>
             <h2 className="text-xl font-semibold text-[#1A1A2E]">2. Services</h2>
             <p>
-              VAILIS.ai provides AI strategy, integration, and execution consulting
+              VAILIS provides AI strategy, integration, and execution consulting
               services. Specific scope and terms are defined in separate service agreements.
             </p>
           </section>
@@ -24,7 +24,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-[#1A1A2E]">3. Intellectual Property</h2>
             <p>
               All content on this site, including text, graphics, and logos, is owned by
-              VAILIS.ai or its licensors. Unauthorized use is prohibited.
+              VAILIS or its licensors. Unauthorized use is prohibited.
             </p>
           </section>
           <section>
@@ -38,7 +38,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-semibold text-[#1A1A2E]">5. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, VAILIS.ai shall not be liable for
+              To the maximum extent permitted by law, VAILIS shall not be liable for
               indirect, incidental, or consequential damages arising from use of this site.
             </p>
           </section>

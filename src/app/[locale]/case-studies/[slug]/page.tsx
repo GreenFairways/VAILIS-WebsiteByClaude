@@ -29,7 +29,7 @@ export default async function CaseStudyPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: `${cs.company}: AI Transformation — ${cs.metrics[0]?.value} ${cs.metrics[0]?.label}`,
-    author: { '@type': 'Organization', name: 'VAILIS.ai' },
+    author: { '@type': 'Organization', name: 'VAILIS' },
     datePublished: '2026-03-01',
     about: { '@type': 'Thing', name: cs.industry },
     mentions: [
@@ -114,7 +114,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
         <p className="mt-12 text-sm text-gray-500 italic">
           This case study is based on publicly available information and industry research.
-          VAILIS.ai presents these as educational content demonstrating the transformative
+          VAILIS presents these as educational content demonstrating the transformative
           potential of AI integration across industries.
         </p>
 

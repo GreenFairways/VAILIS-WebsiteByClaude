@@ -8,11 +8,11 @@ import { CookieBanner } from '@/components/CookieBanner';
 import { routing } from '@/i18n/routing';
 
 export const metadata: Metadata = {
-  title: 'VAILIS.ai | AI Execution Partner',
+  title: 'VAILIS | AI Execution Partner',
   description:
     'We turn AI into business results. Execution partner for AI integration. Measurable ROI. Proven methodologies.',
   openGraph: {
-    title: 'VAILIS.ai | AI Execution Partner',
+    title: 'VAILIS | AI Execution Partner',
     description: 'We turn AI into business results. Execution partner for AI integration.',
   },
   metadataBase: new URL('https://vailis.ai'),

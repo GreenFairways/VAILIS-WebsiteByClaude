@@ -40,7 +40,7 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href={basePath} className="text-xl font-bold text-[#1A1A2E]">
-            VAILIS<span className="text-[#4F46E5]">.ai</span>
+            VAILIS
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">

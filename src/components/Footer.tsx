@@ -23,7 +23,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div>
-            <h3 className="text-lg font-semibold text-white">VAILIS.ai</h3>
+            <h3 className="text-lg font-semibold text-white">VAILIS</h3>
             <p className="mt-2 text-sm text-gray-400">
               AI Execution Partner
             </p>

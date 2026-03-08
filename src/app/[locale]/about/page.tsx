@@ -24,9 +24,9 @@ export default async function AboutPage({
   return (
     <div className="py-16 sm:py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-[#1A1A2E]">About VAILIS.ai</h1>
+        <h1 className="text-4xl font-bold text-[#1A1A2E]">About VAILIS</h1>
         <p className="mt-6 text-xl text-gray-600">
-          VAILIS.ai is an AI Execution Partner — we turn AI strategies into business results.
+          VAILIS is an AI Execution Partner — we turn AI strategies into business results.
           We combine deep technical expertise with proven implementation methodologies to help
           enterprises navigate the AI adoption journey.
         </p>

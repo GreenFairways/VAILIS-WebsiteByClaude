@@ -21,7 +21,7 @@ export function TrustSection() {
         >
           <h2 className="text-2xl font-bold text-[#1A1A2E]">Trusted Technology Partners</h2>
           <div className="mt-10">
-            <PartnerLogos className="text-gray-500" />
+            <PartnerLogos variant="light" />
           </div>
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             {badges.map((b) => (

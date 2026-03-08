@@ -3,7 +3,7 @@ const SITE_URL = 'https://vailis.ai';
 export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'VAILIS.ai',
+  name: 'VAILIS',
   alternateName: 'VAILIS - AI Execution Partner',
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
@@ -72,7 +72,7 @@ export const serviceSchemas = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'AI Strategy & Audit',
-    provider: { '@type': 'Organization', name: 'VAILIS.ai' },
+    provider: { '@type': 'Organization', name: 'VAILIS' },
     description:
       'Assessment of AI readiness, opportunity mapping, ROI projections, technology stack evaluation.',
     areaServed: 'Worldwide',
@@ -81,7 +81,7 @@ export const serviceSchemas = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'AI Integration & Development',
-    provider: { '@type': 'Organization', name: 'VAILIS.ai' },
+    provider: { '@type': 'Organization', name: 'VAILIS' },
     description:
       'Custom LLM solutions, API integration, workflow automation, RAG systems.',
     areaServed: 'Worldwide',
@@ -90,7 +90,7 @@ export const serviceSchemas = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'AI Agent Deployment',
-    provider: { '@type': 'Organization', name: 'VAILIS.ai' },
+    provider: { '@type': 'Organization', name: 'VAILIS' },
     description:
       'Autonomous agents for customer service, operations, marketing. Human-in-the-loop design.',
     areaServed: 'Worldwide',
@@ -99,7 +99,7 @@ export const serviceSchemas = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'Training & Change Management',
-    provider: { '@type': 'Organization', name: 'VAILIS.ai' },
+    provider: { '@type': 'Organization', name: 'VAILIS' },
     description:
       'Team upskilling, process redesign, adoption support, AI literacy.',
     areaServed: 'Worldwide',

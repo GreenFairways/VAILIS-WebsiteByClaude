@@ -1,4 +1,4 @@
-# VAILIS.ai Website
+# VAILIS Website
 
 AI Execution Partner — We turn AI into business results.
 

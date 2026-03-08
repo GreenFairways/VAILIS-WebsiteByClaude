@@ -9,7 +9,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-[#1A1A2E]">1. Data Controller</h2>
             <p>
-              VAILIS.ai (&quot;we&quot;, &quot;us&quot;) is the data controller for personal data
+              VAILIS (&quot;we&quot;, &quot;us&quot;) is the data controller for personal data
               collected through this website. Contact: hello@vailis.ai
             </p>
           </section>
