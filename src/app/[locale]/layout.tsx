@@ -14,6 +14,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'VAILIS | AI Execution Partner',
     description: 'We turn AI into business results. Execution partner for AI integration.',
+    images: ['/opengraph-image'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'VAILIS | AI Execution Partner',
+    description: 'We turn AI into business results. Execution partner for AI integration.',
   },
   metadataBase: new URL('https://vailis.ai'),
 };

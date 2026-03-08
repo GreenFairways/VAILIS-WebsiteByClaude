@@ -6,7 +6,7 @@ export const organizationSchema = {
   name: 'VAILIS',
   alternateName: 'VAILIS - AI Execution Partner',
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/logo.svg`,
   description:
     'AI Execution Partner. We turn AI into business results through strategy, integration, agent deployment, and change management.',
   foundingDate: '2025',
