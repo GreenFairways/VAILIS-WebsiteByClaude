@@ -1,27 +1,43 @@
 'use client';
 
-const partners = [
-  { name: 'OpenAI', url: 'https://logo.clearbit.com/openai.com', domain: 'openai.com' },
-  { name: 'Anthropic', url: 'https://logo.clearbit.com/anthropic.com', domain: 'anthropic.com' },
-  { name: 'AWS', url: 'https://logo.clearbit.com/aws.amazon.com', domain: 'aws.amazon.com' },
-  { name: 'Google Cloud', url: 'https://logo.clearbit.com/cloud.google.com', domain: 'cloud.google.com' },
-  { name: 'Microsoft Azure', url: 'https://logo.clearbit.com/azure.microsoft.com', domain: 'azure.microsoft.com' },
+const LOGO_CDN = 'https://cdn.jsdelivr.net/npm/simple-icons@11/icons';
+
+const partners: { name: string; slug: string }[] = [
+  { name: 'OpenAI', slug: 'openai' },
+  { name: 'Anthropic', slug: 'anthropic' },
+  { name: 'AWS', slug: 'amazonaws' },
+  { name: 'Google Cloud', slug: 'googlecloud' },
+  { name: 'Microsoft Azure', slug: 'microsoftazure' },
 ];
 
-export function PartnerLogos({ className = '' }: { className?: string }) {
+export function PartnerLogos({
+  className = '',
+  variant = 'dark',
+}: {
+  className?: string;
+  variant?: 'dark' | 'light';
+}) {
+  const isDark = variant === 'dark';
   return (
-    <div className={`flex flex-wrap justify-center items-center gap-8 md:gap-12 ${className}`}>
-      {partners.map((p) => (
-        <img
-          key={p.name}
-          src={p.url}
-          alt={p.name}
-          title={p.name}
-          width={120}
-          height={28}
-          className="h-7 w-auto grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 object-contain"
-          loading="lazy"
-        />
+    <div
+      className={`flex flex-wrap justify-center items-center gap-6 md:gap-10 ${className}`}
+    >
+      {partners.map(({ name, slug }) => (
+        <div
+          key={slug}
+          className={`flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border transition-all duration-300 min-w-[110px] ${
+            isDark
+              ? 'border-white/25 bg-white/5 hover:bg-white/10 text-white/90'
+              : 'border-gray-300 bg-white shadow-sm hover:shadow text-gray-700'
+          }`}
+        >
+          <img
+            src={`${LOGO_CDN}/${slug}.svg`}
+            alt={name}
+            className="h-6 w-6 object-contain shrink-0"
+          />
+          <span className="text-sm font-semibold tracking-tight">{name}</span>
+        </div>
       ))}
     </div>
   );
