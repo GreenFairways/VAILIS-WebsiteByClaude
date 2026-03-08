@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { createAlternates } from '@/lib/alternates';
 import { JsonLd } from '@/components/JsonLd';
 import { serviceSchemas, faqSchema } from '@/lib/schema';
 import { FAQSection } from '@/components/FAQSection';
@@ -59,6 +61,15 @@ const services = [
     persona: 'All C-level',
   },
 ];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: createAlternates('/services', locale) };
+}
 
 export default async function ServicesPage({
   params,

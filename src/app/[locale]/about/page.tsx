@@ -1,5 +1,16 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { createAlternates } from '@/lib/alternates';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: createAlternates('/about', locale) };
+}
 
 export default async function AboutPage({
   params,
@@ -57,3 +68,4 @@ export default async function AboutPage({
     </div>
   );
 }
+

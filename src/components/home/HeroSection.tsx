@@ -3,8 +3,7 @@
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-
-const trustLogos = ['OpenAI', 'Anthropic', 'AWS', 'Google Cloud', 'Microsoft Azure'];
+import { PartnerLogos } from '@/components/PartnerLogos';
 
 export function HeroSection() {
   const locale = useLocale();
@@ -55,16 +54,7 @@ export function HeroSection() {
           className="mt-16 pt-16 border-t border-white/10"
         >
           <p className="text-center text-sm text-gray-400 mb-8">{t('trustBar')}</p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12 opacity-80">
-            {trustLogos.map((logo) => (
-              <span
-                key={logo}
-                className="text-lg font-medium text-gray-400"
-              >
-                {logo}
-              </span>
-            ))}
-          </div>
+          <PartnerLogos className="opacity-80" />
         </motion.div>
       </div>
     </section>

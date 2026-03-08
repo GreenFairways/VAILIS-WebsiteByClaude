@@ -1,12 +1,21 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { caseStudies } from '@/data/case-studies';
 import { JsonLd } from '@/components/JsonLd';
+import { createAlternates } from '@/lib/alternates';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
 export async function generateStaticParams() {
   return caseStudies.map((cs) => ({ slug: cs.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale, slug } = await params;
+  return {
+    alternates: createAlternates(`/case-studies/${slug}`, locale),
+  };
 }
 
 export default async function CaseStudyPage({ params }: Props) {

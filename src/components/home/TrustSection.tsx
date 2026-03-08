@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { CountUp } from '@/components/CountUp';
-
-const partners = ['OpenAI', 'Anthropic', 'AWS', 'Google Cloud', 'Microsoft Azure'];
+import { PartnerLogos } from '@/components/PartnerLogos';
 const badges = ['GDPR Compliant', 'SOC 2 Ready', 'ISO Aligned'];
 const stats = [
   { value: 500, suffix: '+', label: 'AI projects researched' },
@@ -21,12 +20,8 @@ export function TrustSection() {
           className="text-center"
         >
           <h2 className="text-2xl font-bold text-[#1A1A2E]">Trusted Technology Partners</h2>
-          <div className="mt-10 flex flex-wrap justify-center gap-8 md:gap-12 text-gray-500">
-            {partners.map((p) => (
-              <span key={p} className="text-lg font-medium">
-                {p}
-              </span>
-            ))}
+          <div className="mt-10">
+            <PartnerLogos className="text-gray-500" />
           </div>
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             {badges.map((b) => (
